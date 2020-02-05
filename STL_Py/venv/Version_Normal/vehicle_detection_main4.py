@@ -85,7 +85,7 @@ def load_image_into_numpy_array(image):
 
 
 # Detection
-def camera1():
+def camera4():
     global car_number
     total_passed_vehicle = 0
     speed = 'waiting...'
@@ -238,9 +238,9 @@ def camera1():
             cv2.destroyAllWindows()
             return car_number
 
-camera1()	
+camera4()		
 
 
 
-if __name__ == "__camera1__":
-   camera1()
+if __name__ == "__camera4__":
+    camera4()

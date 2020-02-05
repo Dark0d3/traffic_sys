@@ -27,7 +27,7 @@ from PIL import Image
 # Object detection imports
 from utils import label_map_util
 from utils import visualization_utils as vis_util
-
+car_number=0
 # initialize .csv
 with open('traffic_measurement.csv', 'w') as f:
     writer = csv.writer(f)
@@ -85,7 +85,8 @@ def load_image_into_numpy_array(image):
 
 
 # Detection
-def object_detection_function():
+def camera2():
+    global car_number
     total_passed_vehicle = 0
     speed = 'waiting...'
     direction = 'waiting...'
@@ -139,7 +140,7 @@ def object_detection_function():
                     )
 
                 total_passed_vehicle = total_passed_vehicle + counter
-
+                car_number=total_passed_vehicle
                 # insert information text to video frame
                 font = cv2.FONT_HERSHEY_SIMPLEX
                 cv2.putText(
@@ -235,6 +236,11 @@ def object_detection_function():
                         writer.writerows([csv_line.split(',')])
             cap.release()
             cv2.destroyAllWindows()
+            return car_number
+
+camera2()		
 
 
-object_detection_function()		
+
+if __name__ == "__camera2__":
+    camera2()
