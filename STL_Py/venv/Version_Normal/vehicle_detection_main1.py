@@ -238,7 +238,6 @@ def camera1():
             cv2.destroyAllWindows()
             return car_number
 
-camera1()	
 
 
 

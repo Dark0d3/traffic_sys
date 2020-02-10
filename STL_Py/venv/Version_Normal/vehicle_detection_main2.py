@@ -38,7 +38,7 @@ with open('traffic_measurement.csv', 'w') as f:
 
 
 # input video
-cap = cv2.VideoCapture('sub-1504619634606.mp4')
+cap = cv2.VideoCapture('sub-1504614469486.mp4')
 
 # Variables
 total_passed_vehicle = 0  # using it to count vehicles
@@ -238,7 +238,7 @@ def camera2():
             cv2.destroyAllWindows()
             return car_number
 
-camera2()		
+	
 
 
 

@@ -12,6 +12,7 @@ from turtle import Turtle,Screen
 from OutputDemo3 import Base,Back,Pole,Red,Yellow,Green,HeadText,Reset
 from Calci import IntervalSlab
 
+
 def NormalTrafficS(List):
     #Normal Slab
     for i in range(0, 4):

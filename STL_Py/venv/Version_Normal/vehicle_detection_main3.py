@@ -236,9 +236,9 @@ def camera3():
                         writer.writerows([csv_line.split(',')])
             cap.release()
             cv2.destroyAllWindows()
-            return car_number
+           # return car_number
 
-camera3()		
+camera3()	
 
 
 

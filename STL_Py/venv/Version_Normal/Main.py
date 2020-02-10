@@ -6,10 +6,11 @@ from OutputDemo3 import Base,Back,Pole,HeadText,Reset
 from SlabTrafficControl import NormalTrafficS,CongestedTrafficS
 from TrafficControl import NormalTrafficT,CongestedTrafficT
 #from Basic_Processing import main
-from vehicle_detection_main1 import camera1
-from vehicle_detection_main2 import camera2
-from vehicle_detection_main3 import camera3
-from vehicle_detection_main4 import camera4
+#from vehicle_detection_main1 import camera1
+#from vehicle_detection_main2 import camera2
+#from vehicle_detection_main3 import camera3
+#from vehicle_detection_main4 import camera4
+from List import main
 
 
 
@@ -34,12 +35,12 @@ Intersection2=random.randrange(0,100)
 Intersection3=random.randrange(0,100)
 Intersection4=random.randrange(0,100)
 '''
-#List=main()
-a=camera1()
-b=camera2()
-c=camera3()
-d=camera4()
-List=[a,b,c,d]
+List=main()
+#a=camera1()
+#b=camera2()
+#c=camera3()
+#d=camera4()
+#List=[a,b,c,d]
 print (List)
 
 MaxIndex=int(GetMaxCarIndex(List))
